@@ -10,13 +10,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 export class SueldosComponent {
 
-  valorInput = '';
+  SueldoI = '';
 
   CalcularS(){
-    console.log("hola mundo")
-    alert("hola mundo")
-    const valor = this.valorInput;
-    console.log('Valor del input:', valor);
+    const sueldo = this.SueldoI;
+    console.log(typeof sueldo);
   }
 
 
