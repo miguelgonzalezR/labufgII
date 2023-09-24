@@ -11,10 +11,13 @@ import { BrowserModule } from '@angular/platform-browser';
 export class SueldosComponent {
 
   SueldoI = '';
+  AFP = '';
 
   CalcularS(){
     const sueldo = this.SueldoI;
+    const AFPts = this.AFP
     console.log(typeof sueldo);
+    console.log(AFPts)
   }
 
 
