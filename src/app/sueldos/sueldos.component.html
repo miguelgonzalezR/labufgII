@@ -4,16 +4,16 @@
 <input type="number" [(ngModel)]="SueldoI" />
 <br><br>
 <label>AFP: </label>
-<input [(ngModel)]="AFP" type="number"  />
+<input [(ngModel)]="AFP" type="number" readonly />
 
 <br><br>
 <label for="">Renta: </label>
-<input [(ngModel)]="RENTA" type="number" value="0">
+<input [(ngModel)]="RENTA" type="number" value="0" readonly>
 <br><br>
 <label for="">ISSS: </label>
-<input [(ngModel)]="ISSS"type="number" value="0">
+<input [(ngModel)]="ISSS"type="number" value="0" readonly>
 <br><br><br><br>
 <button (click)="CalcularS()">Calcular sueldo final</button>
 <br><br>
 <label for="">Sueldo Final: </label>
-<input type="number" value="0">
+<input type="number" [(ngModel)]="SueldoF" value="0" readonly>
