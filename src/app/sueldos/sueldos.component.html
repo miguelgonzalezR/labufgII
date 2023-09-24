@@ -1,10 +1,11 @@
 <h1>Calculadora de sueldos de El Salvador</h1>
 
 <label>Sueldo base: </label>
-<input type="number" name="" id="" value="0">
+<input type="number" name="" #su id="" value="0">
 <br><br>
 <label>AFP: </label>
-<input type="number" value="0">
+<input type="text" [(ngModel)]="valorInput" />
+
 <br><br>
 <label for="">Renta: </label>
 <input type="number" value="0">
@@ -12,7 +13,7 @@
 <label for="">ISSS: </label>
 <input type="text" name="" id="" value="0">
 <br><br><br><br>
-<button>Calcular sueldo final</button>
+<button (click)="CalcularS()">Calcular sueldo final</button>
 <br><br>
 <label for="">Sueldo Final: </label>
 <input type="number" value="0">
