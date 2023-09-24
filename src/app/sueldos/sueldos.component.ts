@@ -17,15 +17,16 @@ export class SueldosComponent {
 
   CalcularS(){  
     const sueldo = this.SueldoI;
-    const AFPts = this.AFP;
-    const Rentas = this.RENTA;
-    const ISSES = this.ISSS;
+    const AFPts = parseFloat(this.AFP); // Convierte a número de punto flotante
+  // Multiplicar el valor de AFP por 7.25%
+  const AFPMultiplicada = AFPts * 0.0725;
 
-    console.log(typeof sueldo);
-    console.log(AFPts)
-    console.log(Rentas)
-    console.log(ISSES)
+  console.log("Sueldo Inicial:", sueldo);
+  console.log("Deducciones AFP (después de multiplicar por 7.25%):", AFPMultiplicada);
+
   }
+
+
 
 
   constructor(){}
