@@ -12,12 +12,19 @@ export class SueldosComponent {
 
   SueldoI = '';
   AFP = '';
+  RENTA = '';
+  ISSS = '';
 
-  CalcularS(){
+  CalcularS(){  
     const sueldo = this.SueldoI;
-    const AFPts = this.AFP
+    const AFPts = this.AFP;
+    const Rentas = this.RENTA;
+    const ISSES = this.ISSS;
+
     console.log(typeof sueldo);
     console.log(AFPts)
+    console.log(Rentas)
+    console.log(ISSES)
   }
 
 
